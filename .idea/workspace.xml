@@ -5,45 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="495d1422-67f6-45e2-aa23-80a3f48f7af1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Controlador/Controlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Articulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ClienteEstandar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ClientePremium.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ArticuloDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ArticuloDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ClienteDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ClienteDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/FactoryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/FactoryDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/PedidoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/PedidoDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/thejavaislandConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Datos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Hibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Lista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaArticulos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaClientes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaPedidos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Pedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Vista/GestionOS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Vista/OnlineStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TheJavaIslandProd5/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TheJavaIslandProd5/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +29,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "app.teamhub.trackedBranches": "",
+    "app.teamhub.trackedBranches": "-1i6iomb/main",
     "last_opened_file_path": "C:/Users/Admin/Downloads/openjfx-21.0.1_windows-x64_bin-sdk",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
