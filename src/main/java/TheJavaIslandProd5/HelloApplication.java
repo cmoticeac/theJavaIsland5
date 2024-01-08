@@ -21,7 +21,7 @@ public class HelloApplication extends Application {
    HelloController controller = new HelloController();
     @Override
     public void start(Stage stage) throws IOException {
-        stage.setTitle("TheBigDev App");
+        stage.setTitle("TheJavaIsland App");
 
         // maximizar
         stage.setMaximized(true);

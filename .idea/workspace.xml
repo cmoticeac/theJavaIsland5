@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="495d1422-67f6-45e2-aa23-80a3f48f7af1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Articulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Articulo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ArticuloDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ArticuloDAO.java" afterDir="false" />
@@ -14,6 +15,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaClientes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaPedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaPedidos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Pedido.java" afterDir="false" />
+=======
+>>>>>>> e171c8a6d3a3efffa36bd2c50965b32bba8a7642
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +43,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+<<<<<<< HEAD
     "app.teamhub.trackedBranches": "-v4jb7t/main,-v4jb7t/producto5",
     "last_opened_file_path": "C:/Users/Admin/Documents/GitHub/theJavaIsland5/target",
     "project.structure.last.edited": "Libraries",
+=======
+    "app.teamhub.trackedBranches": "-1i6iomb/main",
+    "last_opened_file_path": "C:/Users/Admin/Downloads/openjfx-21.0.1_windows-x64_bin-sdk",
+    "project.structure.last.edited": "Modules",
+>>>>>>> e171c8a6d3a3efffa36bd2c50965b32bba8a7642
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3683616"
   }
