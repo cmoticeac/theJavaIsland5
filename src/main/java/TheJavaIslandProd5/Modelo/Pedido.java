@@ -106,8 +106,6 @@ public class Pedido {
         return precioTotal;
     }
 
-
-
     //Funcion para calcular el precio TOTAL del pedido premium (precio de todos los articulos + envio - descuento)
     public double precioEnvio(double precioDeVenta, double cantidadArticulos, double gastosEnvio, Cliente cliente) {
         double precio = precioDeVenta * cantidadArticulos;
@@ -119,8 +117,6 @@ public class Pedido {
         }
 
     }
-
-
     @Override
     public String toString() {
         if (enviado) {

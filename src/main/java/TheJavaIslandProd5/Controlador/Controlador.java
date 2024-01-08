@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Controlador {
@@ -84,7 +85,7 @@ public class Controlador {
 
     public String imprimirArticulos() {
         // Obtener la lista de artículos desde la base de datos
-        ArrayList<Articulo> articulos = articuloDAO.readAll();
+        List<Articulo> articulos = articuloDAO.readAll();
 
         StringBuilder result = new StringBuilder();
         for (Articulo art : articulos) {

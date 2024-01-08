@@ -5,7 +5,7 @@ module com.example.demo {
     requires jakarta.persistence;
     requires java.naming;
 
-
+    opens TheJavaIslandProd5.Modelo to org.hibernate.orm.core;
     opens TheJavaIslandProd5 to javafx.fxml;
     exports TheJavaIslandProd5;
 }

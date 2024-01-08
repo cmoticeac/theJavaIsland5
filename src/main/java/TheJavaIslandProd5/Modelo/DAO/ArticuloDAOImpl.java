@@ -24,9 +24,9 @@ public class ArticuloDAOImpl implements ArticuloDAO {
     }
 
     @Override
-    public ArrayList<Articulo>readAll(){
+    public Articulo readAll(){
         try (Session session = sessionFactory.openSession()) {
-            return (ArrayList<Articulo>) session.createQuery("FROM Articulo", Articulo.class).list();
+            return (Articulo) session.createQuery("FROM Articulo", Articulo.class).list();
         }
     }
 
@@ -50,5 +50,16 @@ public class ArticuloDAOImpl implements ArticuloDAO {
             transaction.commit();
         }
     }
-
+    public List<Articulo> list() {
+        try (Session session = sessionFactory.openSession()) {
+            return session.createQuery("from Articulo", Articulo.class).list();
+        }
+    }
+    public void delete(Articulo articulo) {
+        try (Session session = sessionFactory.openSession()) {
+            Transaction transaction = session.beginTransaction();
+            session.delete(articulo);
+            transaction.commit();
+        }
+    }
 }

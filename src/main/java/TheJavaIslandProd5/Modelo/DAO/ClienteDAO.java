@@ -12,4 +12,6 @@ public interface ClienteDAO {
     Cliente findById(String id);
 
     void update(Cliente cliente);
+    List<Cliente> list();
+    void delete(Cliente cliente);
 }

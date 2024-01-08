@@ -8,9 +8,12 @@ public interface ArticuloDAO {
 
     void insert(Articulo articulo);
 
-    ArrayList<Articulo> readAll();
+    Articulo readAll();
 
     Articulo findById(int id);
 
     void update(Articulo articulo);
+
+    List<Articulo> list();
+    void delete(Articulo articulo);
 }

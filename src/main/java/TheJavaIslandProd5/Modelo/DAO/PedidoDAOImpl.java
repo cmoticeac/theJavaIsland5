@@ -62,4 +62,9 @@ public class PedidoDAOImpl implements PedidoDAO {
             transaction.commit();
         }
     }
+    public List<Pedido> list() {
+        try (Session session = sessionFactory.openSession()) {
+            return session.createQuery("from Pedido", Pedido.class).list();
+        }
+    }
 }

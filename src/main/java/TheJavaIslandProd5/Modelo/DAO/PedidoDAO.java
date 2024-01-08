@@ -15,4 +15,5 @@ public interface PedidoDAO {
 
     void update(Pedido pedido);
     void delete(int numeroPedido);
+    List<Pedido> list();
 }

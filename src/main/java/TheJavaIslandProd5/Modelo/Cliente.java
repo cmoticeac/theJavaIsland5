@@ -48,5 +48,8 @@ public abstract class Cliente {
     public void setNif(String c) {this.Nif = c;}
 
     public void setEmail(String c) {this.Email = c;}
+    public String tipoCliente() {
+        return "";
+    }
 
 }
