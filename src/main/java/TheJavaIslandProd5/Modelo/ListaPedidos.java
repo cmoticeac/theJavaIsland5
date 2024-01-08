@@ -8,9 +8,6 @@ import java.util.List;
 public class ListaPedidos extends Lista<Pedido>{
 
     //Contructor
-    public ListaPedidos() {
-        ListaPedidos.super.lista = new ArrayList<Pedido>();
-    }
     public List<Pedido> getListaPedidos() {
         return FactoryDAO.crearPedidoDAO().list();
     }
@@ -39,17 +36,23 @@ public class ListaPedidos extends Lista<Pedido>{
         return getListaPedidos();
     }
 
-    public Pedido existeNumeroPedido(Integer numero) {
-        List<Pedido> listaPedidos = FactoryDAO.crearPedidoDAO().readAll();
-
-        for (Pedido pedido : listaPedidos) {
-            if (pedido.getNumeroPedido() == numero) {
-                return pedido;  // Se encontró un pedido con el número dado
-            }
-        }
-
-        return null;  // No se encontró ningún pedido con el número dado
-    }
-
+   // public Pedido existeNumeroPedido(Integer numero) {
+        //List<Pedido> listaPedidos = FactoryDAO.crearPedidoDAO().readAll();
+        //for (Pedido pedido : listaPedidos) {
+          //  if (pedido.getNumeroPedido() == numero) {
+            //    return pedido;  // Se encontró un pedido con el número dado
+            //}
+        //}
+        //return null;  // No se encontró ningún pedido con el número dado
+    //}
+   public Pedido existeNumeroPedido(Integer numero) {
+       List<Pedido> pedidos = FactoryDAO.crearPedidoDAO().readAll();
+       for (Pedido pedido : pedidos) {
+           if (pedido.getNumeroPedido() == numero) {
+               return pedido;  // Devolver el pedido si se encuentra
+           }
+       }
+       return null;  // Devolver null si no se encuentra el pedido
+   }
 
 }

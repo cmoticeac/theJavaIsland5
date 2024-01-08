@@ -5,26 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="495d1422-67f6-45e2-aa23-80a3f48f7af1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Controlador/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Controlador/Controlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Articulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Articulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ClienteEstandar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ClienteEstandar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ArticuloDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ArticuloDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ArticuloDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ArticuloDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ClienteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ClienteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ClienteDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/ClienteDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/PedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/PedidoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/PedidoDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/DAO/PedidoDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaArticulos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaArticulos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaClientes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaPedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/ListaPedidos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheJavaIslandProd5/Modelo/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TheJavaIslandProd5/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +42,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "app.teamhub.trackedBranches": "-v4jb7t/main,-v4jb7t/producto5",
     "last_opened_file_path": "C:/Users/Admin/Documents/GitHub/theJavaIsland5/target",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3683616"
   }

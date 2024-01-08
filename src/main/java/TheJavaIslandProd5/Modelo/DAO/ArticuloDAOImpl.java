@@ -5,6 +5,7 @@ import java.util.*;
 
 import TheJavaIslandProd5.Modelo.Hibernate;
 import org.hibernate.*;
+import org.hibernate.query.Query;
 
 public class ArticuloDAOImpl implements ArticuloDAO {
 
@@ -24,9 +25,9 @@ public class ArticuloDAOImpl implements ArticuloDAO {
     }
 
     @Override
-    public Articulo readAll(){
+    public List<Articulo> readAll() {
         try (Session session = sessionFactory.openSession()) {
-            return (Articulo) session.createQuery("FROM Articulo", Articulo.class).list();
+            return session.createQuery("FROM Articulo", Articulo.class).list();
         }
     }
 

@@ -36,13 +36,12 @@ public class Pedido {
 
 
     //Constructores
-    public Pedido(int np, Cliente cl, Articulo art, int ca, LocalDateTime fh, double pt, boolean en){
+    public Pedido(int np, Cliente cl, Articulo art, int ca, LocalDateTime fh, boolean en){
         this.numeroPedido = np;
         this.cliente = cl;
         this.articulo = art;
         this.cantidadArticulos = ca;
         this.fechaHora = fh;
-        this.precioTotal = pt;
         this.enviado = en;
     }
     public Pedido(){}

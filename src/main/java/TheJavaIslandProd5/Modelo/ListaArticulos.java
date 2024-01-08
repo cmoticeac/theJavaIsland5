@@ -1,8 +1,6 @@
 package TheJavaIslandProd5.Modelo;
-
 import TheJavaIslandProd5.Modelo.DAO.FactoryDAO;
 import TheJavaIslandProd5.Modelo.DAO.FactoryDAOImpl;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,13 +48,13 @@ public class ListaArticulos extends Lista<Articulo>{
         return null;
     }
     public static Articulo existeCodigoArticulo(String codigo) {
-        Articulo articulo = FactoryDAO.crearArticuloDAO().readAll();
-        // Verificar si el artículo con el código dado existe
-        if (articulo != null && String.valueOf(articulo.getCodigo()).equals(codigo)) {
-            return articulo;  // Devolver el artículo si se encuentra
+        List<Articulo> articulos = FactoryDAO.crearArticuloDAO().readAll();
+        // Verificar si hay algún artículo con el código dado
+        for (Articulo articulo : articulos) {
+            if (String.valueOf(articulo.getCodigo()).equals(codigo)) {
+                return articulo;  // Devolver el artículo si se encuentra
+            }
         }
         return null;  // Devolver null si no se encuentra el artículo
     }
-
-
 }

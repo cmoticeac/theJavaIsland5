@@ -58,6 +58,4 @@ public class ListaClientes extends Lista<Cliente>{
         return null;  // No se encontró ningún cliente con el correo electrónico dado
     }
 
-
-
 }

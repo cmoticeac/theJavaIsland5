@@ -8,7 +8,7 @@ public interface ArticuloDAO {
 
     void insert(Articulo articulo);
 
-    Articulo readAll();
+    List<Articulo> readAll();
 
     Articulo findById(int id);
 

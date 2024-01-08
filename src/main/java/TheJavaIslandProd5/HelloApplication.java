@@ -15,6 +15,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import java.io.IOException;
 import java.util.List;
+import java.lang.Double;
 
 public class HelloApplication extends Application {
    HelloController controller = new HelloController();
@@ -78,22 +79,21 @@ public class HelloApplication extends Application {
             Stage stage = new Stage();
             stage.setTitle("Añadir Artículo");
 
-            TextField txtCodigo = new TextField();
-            TextField txtDescripcion = new TextField();
-            TextField txtPrecioVenta = new TextField();
-            TextField txtGastoEnvio = new TextField();
-            TextField txtTiempo = new TextField();
-
+            TextField txtClienteEmail = new TextField();
+            TextField txtClienteNif = new TextField();
+            TextField txtClienteNombre = new TextField();
+            TextField txtClienteDomicilio = new TextField();
+            TextField txtPremium = new TextField();
             Button btnGuardar = new Button("Guardar");
             btnGuardar.setOnAction(ev -> {
                 try {
-                    String codigo = txtCodigo.getText();
-                    String descripcion = txtDescripcion.getText();
-                    float precioVenta = Float.parseFloat(txtPrecioVenta.getText());
-                    float gastoEnvio = Float.parseFloat(txtGastoEnvio.getText());
-                    int tiempo = Integer.parseInt(txtTiempo.getText());
+                    String email = txtClienteEmail.getText();
+                    String nif = txtClienteNif.getText();
+                    String nombre = txtClienteNombre.getText();
+                    String domicilio = txtClienteDomicilio.getText();
+                    Boolean premium = Boolean.parseBoolean(txtPremium.getText());
 
-                    controller.addArticulo(codigo, descripcion, precioVenta, gastoEnvio, tiempo);
+                    controller.addCliente(email,nif,nombre,domicilio, premium) ;
                 } catch (Exception exc) {
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("Error");
@@ -108,11 +108,11 @@ public class HelloApplication extends Application {
             btnSalir.setOnAction(e_articulo_add -> stage.close());
 
             VBox layout = new VBox(10,
-                    new Label("Código:"), txtCodigo,
-                    new Label("Descripción:"), txtDescripcion,
-                    new Label("Precio Venta:"), txtPrecioVenta,
-                    new Label("Gasto de Envío:"), txtGastoEnvio,
-                    new Label("Tiempo de Preparación:"), txtTiempo,
+                    new Label("Email:"), txtClienteEmail,
+                    new Label("NIF:"), txtClienteNif,
+                    new Label("Nombre:"), txtClienteNombre,
+                    new Label("Domicilio:"), txtClienteDomicilio,
+                    new Label("Es premium (true / false):"), txtPremium,
                     btnGuardar,
                     btnSalir
             );
@@ -169,20 +169,26 @@ public class HelloApplication extends Application {
             Stage stage = new Stage();
             stage.setTitle("Añadir Cliente");
 
-            TextField txtClienteEmail = new TextField();
-            TextField txtClienteNif = new TextField();
+            TextField txtClienteId = new TextField();
             TextField txtClienteNombre = new TextField();
             TextField txtClienteDomicilio = new TextField();
+            TextField txtClienteNif = new TextField();
+            TextField txtClienteEmail = new TextField();
+            TextField txtPremiumDescuento = new TextField();
+            TextField txtPremiumCuota = new TextField();
             TextField txtPremium = new TextField();
 
             Button btnGuardar = new Button("Guardar");
             btnGuardar.setOnAction(ev -> {
                 try {
-                    String email = txtClienteEmail.getText();
-                    String nif = txtClienteNif.getText();
+                    String id = txtClienteId.getText();
                     String nombre = txtClienteNombre.getText();
                     String domicilio = txtClienteDomicilio.getText();
-                    Boolean premium = Boolean.parseBoolean(txtPremium.getText());
+                    String nif = txtClienteNif.getText();
+                    String email = txtClienteEmail.getText();
+                    Double descuentoAnual = Double.valueOf(txtPremiumDescuento.getText());
+                    Double cuotaMensual = Double.valueOf(txtPremiumCuota.getText());
+                   Boolean premium = Boolean.parseBoolean(txtPremium.getText());
 
                     controller.addCliente(email,nif,nombre,domicilio, premium) ;
                 } catch (Exception exc) {
