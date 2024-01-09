@@ -38,23 +38,5 @@ public class ListaArticulos extends Lista<Articulo>{
         return getListaArticulos();
     }
 
-    public Articulo existeArticulo(Articulo articulo) {
-        for (int i = 0; i < getListaArticulos().size(); i++) {
-            Articulo a = getListaArticulos().get(i);
-            if (a.getCodigo() == articulo.getCodigo()) {
-                return a;
-            }
-        }
-        return null;
-    }
-    public static Articulo existeCodigoArticulo(String codigo) {
-        List<Articulo> articulos = FactoryDAO.crearArticuloDAO().readAll();
-        // Verificar si hay algún artículo con el código dado
-        for (Articulo articulo : articulos) {
-            if (String.valueOf(articulo.getCodigo()).equals(codigo)) {
-                return articulo;  // Devolver el artículo si se encuentra
-            }
-        }
-        return null;  // Devolver null si no se encuentra el artículo
-    }
+
 }
