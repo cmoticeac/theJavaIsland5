@@ -14,4 +14,6 @@ public interface ClienteDAO {
     void update(Cliente cliente);
     List<Cliente> list();
     void delete(Cliente cliente);
+
+    Cliente obtenerUltimo();
 }

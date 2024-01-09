@@ -23,6 +23,7 @@ public class Controlador {
         this.pedidoDAO = pedidoDAO;
     }
 
+
     public ArticuloDAO getArticuloDAO() {
         return articuloDAO;
     }
@@ -83,6 +84,10 @@ public class Controlador {
         return clienteDAO.findById(nif);
     }
 
+    public Cliente obtenerUltimoCliente(){
+        return clienteDAO.obtenerUltimo();
+    }
+
     public String imprimirArticulos() {
         // Obtener la lista de artículos desde la base de datos
         List<Articulo> articulos = articuloDAO.readAll();
@@ -98,6 +103,19 @@ public class Controlador {
         return articuloDAO.findById(Integer.parseInt(codigo));
     }
 
+    //False -> no existe
+    //True -> existe
+    public Boolean existeArticulo(String codigo){
+        if(articuloDAO.findById(Integer.parseInt(codigo)) == null) return false;
+        return true;
+    }
+    public List<Articulo> obtenerArticulos(){
+        return articuloDAO.readAll();
+    }
+
+    public List<Cliente> conseguirClientes(){
+        return clienteDAO.readAll();
+    }
     public String imprimirClientes() {
         // Obtener la lista de clientes desde la base de datos
         ArrayList<Cliente> clientes = clienteDAO.readAll();
@@ -108,7 +126,18 @@ public class Controlador {
         }
         return result.toString();
     }
-
+    public List<ClientePremium> conseguirPremium(){
+        ArrayList<Cliente> c = clienteDAO.readAll();
+        ArrayList<ClientePremium> cp = new ArrayList<ClientePremium>();
+        ClientePremium clientePremium;
+        for (Cliente cl : c) {
+            if (cl instanceof ClientePremium) {
+                clientePremium = (ClientePremium) cl;
+                cp.add(clientePremium);
+            }
+        }
+        return cp;
+    }
     public String imprimirClientesPremium() {
         // Obtener la lista de clientes premium desde la base de datos
         ArrayList<Cliente> clientesPremium = clienteDAO.readAll();
@@ -120,6 +149,18 @@ public class Controlador {
             }
         }
         return result.toString();
+    }
+    public List<ClienteEstandar> conseguirEstandar(){
+        ArrayList<Cliente> c = clienteDAO.readAll();
+        ArrayList<ClienteEstandar> ce = new ArrayList<ClienteEstandar>();
+        ClienteEstandar clienteEstandar;
+        for (Cliente cl : c) {
+            if (cl instanceof ClienteEstandar) {
+                clienteEstandar = (ClienteEstandar) cl;
+                ce.add(clienteEstandar);
+            }
+        }
+        return ce;
     }
 
     public String imprimirClientesEstandar() {
@@ -147,7 +188,16 @@ public class Controlador {
         }
         return false;
     }
+    public List<Pedido> obtenerPedidosPendientesClase() {
+        // Obtener la lista de pedidos pendientes desde la base de datos
+        ArrayList<Pedido> pedidosPendientes = pedidoDAO.readAll();
+        List<Pedido> pedidos = new ArrayList<Pedido>();
 
+        for (Pedido p : pedidosPendientes) {
+            if (!p.getEnviado()) pedidos.add(p);
+        }
+        return pedidos;
+    }
     public String obtenerPedidosPendientes() {
         // Obtener la lista de pedidos pendientes desde la base de datos
         ArrayList<Pedido> pedidosPendientes = pedidoDAO.readAll();
@@ -157,6 +207,16 @@ public class Controlador {
             if (!p.getEnviado()) result.append(p.getNumeroPedido()).append(" ").append(p.getPrecioTotal()).append("\n");
         }
         return result.toString();
+    }
+    public List<Pedido> obtenerPedidosEnviadosClase() {
+        // Obtener la lista de pedidos pendientes desde la base de datos
+        ArrayList<Pedido> pedidosPendientes = pedidoDAO.readAll();
+        List<Pedido> pedidos = new ArrayList<Pedido>();
+
+        for (Pedido p : pedidosPendientes) {
+            if (p.getEnviado()) pedidos.add(p);
+        }
+        return pedidos;
     }
     public String obtenerPediosEnviados() {
         // Obtener la lista de pedidos enviados desde la base de datos

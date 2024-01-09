@@ -5,7 +5,9 @@ import java.util.*;
 
 import TheJavaIslandProd5.Modelo.*;
 import TheJavaIslandProd5.Modelo.Hibernate;
+import jakarta.persistence.NoResultException;
 import org.hibernate.*;
+import org.hibernate.query.Query;
 
 public class ClienteDAOImpl implements ClienteDAO {
 
@@ -36,10 +38,15 @@ public class ClienteDAOImpl implements ClienteDAO {
         }
     }
 
-    public Cliente findById(String id) {
+    public Cliente findById(String nif) {
         try (Session session = sessionFactory.openSession()) {
-            Cliente art = session.get(Cliente.class, id);
+            Query<Cliente> query = session.createNativeQuery("SELECT * FROM Cliente WHERE nif = :nif", Cliente.class);
+            query.setParameter("nif", nif);
+            Cliente art = query.getSingleResult();
             return art;
+        } catch (NoResultException e) {
+            // No se encontraron resultados
+            return null;
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -57,6 +64,20 @@ public class ClienteDAOImpl implements ClienteDAO {
     public List<Cliente> list() {
         try (Session session = sessionFactory.openSession()) {
             return session.createQuery("from Cliente", Cliente.class).list();
+        }
+    }
+
+    public Cliente obtenerUltimo() {
+        try (Session session = sessionFactory.openSession()) {
+            Query<Cliente> query = session.createQuery("FROM Cliente ORDER BY id DESC", Cliente.class);
+            query.setMaxResults(1); // Obtener solo un resultado
+            List<Cliente> resultados = query.getResultList();
+
+            if (!resultados.isEmpty()) {
+                return resultados.get(0);
+            } else {
+                return null; // o lanza una excepción si prefieres
+            }
         }
     }
     public void delete(Cliente cliente) {

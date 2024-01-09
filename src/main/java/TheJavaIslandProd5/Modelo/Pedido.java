@@ -7,8 +7,8 @@ import java.text.ParseException;
 import java.util.Date;
 @Entity
 @Table(name = "pedido")
-@SecondaryTable(name = "articulo", pkJoinColumns = @PrimaryKeyJoinColumn(name = "IdArticulo"))
-@SecondaryTable(name = "cliente", pkJoinColumns = @PrimaryKeyJoinColumn(name = "IdCliente"))
+@SecondaryTable(name = "articulo", pkJoinColumns = @PrimaryKeyJoinColumn(name = "Id"))
+@SecondaryTable(name = "cliente", pkJoinColumns = @PrimaryKeyJoinColumn(name = "Id"))
 public class Pedido {
 
     /**
@@ -29,6 +29,9 @@ public class Pedido {
     private int cantidadArticulos;
     @Column (name = "FechaHora")
     private LocalDateTime fechaHora;
+
+
+
     @Column (name = "PrecioTotal")
     private double precioTotal;
     @Column (name = "Enviado")
@@ -97,6 +100,9 @@ public class Pedido {
         return enviado;
     }
 
+    public void setPrecioTotal(double precioTotal) {
+        this.precioTotal = precioTotal;
+    }
 
     public double getPrecioTotal() {
         // Calcula el precio total como precio de venta por cantidad de artículos más gastos de envío
